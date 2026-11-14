@@ -36,8 +36,8 @@ public class Juego {
 			        nro = scan.nextInt();
 			       
 			        
-			        if(nro <=0) {// Esta condicional se la agrego como "ADVERTENCIA"
-			        	System.out.print("\nNO SE ACEPTAN NÚMEROS NEGATIVOS\n");
+			        if(nro < 1 || nro > 100) {// Esta condicional se la agrego como "ADVERTENCIA"
+			        	System.out.print("\nNO SE ACEPTAN EL NRO 0, NÚMEROS NEGATIVOS, TAMPOCOS MAYORES A 100\n");
 			        	
 			        }else {
 			        	valido= true;
