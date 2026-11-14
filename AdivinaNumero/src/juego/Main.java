@@ -1,5 +1,6 @@
 package juego;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +13,18 @@ public class Main {
         // Crea el objeto que representa al juego.
         Juego juego = new Juego(0,5);// el número 0 y el número 5 vienen del constructor
         
+        System.out.println("\n----- MENÚ -----");
+        System.out.println("1. Jugar");
+        System.out.println("2. Ver instrucciones");
+        System.out.println("3. Salir");
+        System.out.print("Elegí una opción: ");
 
+        
+        int numero;
+        String opcion ;
+        boolean valido = false;
+        generarRenglonL();
+        
       
     }
     
