@@ -77,11 +77,24 @@ public class Juego {
 	}
 	
 	public void mostrarInstrucciones() {
+		Scanner scn = new Scanner(System.in);
 		 System.out.println("\n----- INSTRUCCIONES -----");
 	     System.out.println("Adiviná el número secreto del 1 al 100.");
 	     System.out.println("Tenés que ingresar un número y acertar el número secreto en menos de cinco intentos");
 	     System.out.println("Después de cada intento recibirás una pista que te ayudará a llegar al número secreto.");
 	     System.out.println("BUENA SUERTE !!");
+	     System.out.print("");
+	     System.out.println("Si desea jugar ingrese 1. - Si desa salir ingrese 2");
+	     
+	     String opcion = scn.nextLine();
+	     
+	     if (opcion.equals("1")) {
+	         jugar();
+	     } else if (opcion.equals("2")) {
+	         System.out.println("¡Gracias por participar!");
+	     } else {
+	         System.out.println("Opción incorrecta.");
+	     }
 	}
 	
     
