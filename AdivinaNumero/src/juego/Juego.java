@@ -57,5 +57,13 @@ public class Juego {
 	    }
 	}
 	
+	public void mostrarInstrucciones() {
+		 System.out.println("\n----- INSTRUCCIONES -----");
+	     System.out.println("Adiviná el número secreto del 1 al 100.");
+	     System.out.println("Tenés que ingresar un número y acertar el número secreto en menos de cinco intentos");
+	     System.out.println("Después de cada intento recibirás una pista que te ayudará a llegar al número secreto.");
+	     System.out.println("BUENA SUERTE !!");
+	}
+	
     
 }
