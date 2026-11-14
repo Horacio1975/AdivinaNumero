@@ -6,7 +6,7 @@ public class Juego {
 
 	// Atributos del juego.
     int numeroSecreto;
-    int intentos = 3;
+    int intentos = 5;
     int nro;
 	public Juego(int numeroSecreto, int intentos) {
 		super();
@@ -19,6 +19,7 @@ public class Juego {
 	public void jugar(int nro) {
 		
 		Scanner scan = new Scanner(System.in);
+		numeroSecreto = (int) (Math.random()*100)+1;
 		
 		
 	}
